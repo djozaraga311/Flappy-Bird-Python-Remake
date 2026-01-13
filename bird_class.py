@@ -31,6 +31,7 @@ class Bird(pygame.sprite.Sprite):
         self.fail = False
         self.collision = False
         self.punchSound = pygame.mixer.Sound("assets/audio/punch.mp3")
+        self.death = pygame.mixer.Sound("assets/audio/sfx_die.mp3")
 
     # MOVEMENT
     def jump(self):
@@ -109,6 +110,8 @@ class Bird(pygame.sprite.Sprite):
         else:
             if not self.collision:
                 self.punchSound.play()
+
+                self.death.play()
                 self.collision = True
 
             self.vel += 0.5
