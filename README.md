@@ -16,3 +16,6 @@ After the course, expansions and tweaks were done solo to add more features from
 **menu_class.py** - A framework for button sprites that are used in menus, contains fade in/out animations and positioning
 **pipes_class.py** - Contains pipe sprites and movement
 **main.py** - Manages the game loop and controls objects from the each class. Run this to play the game
+
+Sprites are from [here](github.com/russs123/pygame_flappy_bird_assets)
+Audio is from [here](https://www.myinstants.com/en/instant/flappy-birds-die/)
